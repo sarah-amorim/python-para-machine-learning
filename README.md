@@ -4,7 +4,22 @@ Este repositório contém materiais e exemplos práticos para introdução ao us
 
 ---
 
-## 📌 Conteúdo
+## Sobre o Curso
+
+Este curso faz parte do **Lead Dell**. As soluções concebidas no **Lead – Centro de Pesquisa, Desenvolvimento e Inovação Dell** transformam a vida de milhares de pessoas por meio de tecnologia, pesquisa e inovação.
+
+A partir da ideia de transformar vidas por meio da tecnologia, a **Dell** idealizou o Lead — fundado em **Fortaleza, em 2011**, em parceria com grandes instituições de ensino do Ceará. O centro é mantido com recursos de investimentos em **Pesquisa e Desenvolvimento (P&D)** conforme a **Lei nº 8.248/91 (Lei de Informática)**.
+
+O **Lead Dell** é formado por uma equipe multiprofissional que valoriza a **diversidade** e a **inclusão**. Atua com inovações tecnológicas que apoiam a transformação do mercado e da sociedade, desenvolvendo soluções em áreas como:
+- Processamento de Linguagem Natural
+- Dispositivos Vestíveis
+- Inteligência Artificial
+- Desenvolvimento Web e Mobile  
+Utilizando tecnologias atuais e alinhadas ao mercado.
+
+---
+
+## Conteúdo do Curso
 
 ### 1. Programação Funcional
 
@@ -45,9 +60,3 @@ Este repositório contém materiais e exemplos práticos para introdução ao us
 - Leitura e gravação de dados com `pickle` e `json`
 
 ---
-
-## ▶️ Como Usar
-
-1. Clone o repositório:
-   ```bash
-   git clone https://github.com/seu-usuario/python-para-machine-learning.git
