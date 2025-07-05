@@ -47,3 +47,15 @@ A lista de filmes passadas pelo seu chefe tem 3 filmes ruins, 2 filmes médios e
 Você pode dar a boa notícia de que há mais filmes bons no seu catálogo do que ruins! Agora, e se ele lhe passar uma nova lista de filmes e 
 perguntar a você: “existe algum filme ruim no meio? Todas as notas são boas?”
 '''
+#  Primeiro, utilize-a para comparar a nota de cada filme com a avaliação ‘ruim’. Para fazer essa comparação, basta usar uma expressão lambda. 
+novas_categorias = ['bom', 'bom', 'bom', 'ruim', 'bom']
+filmes_ruins_booleano = list(map(lambda x: x == 'ruim', novas_categorias))
+print(filmes_ruins_booleano)  # [False, False, False, True, False]
+
+print(any(filmes_ruins_booleano))  # True
+
+# De maneira parecida, você deve utilizar a função map para comparar se as classificações são iguais a ‘bom’.
+filmes_bons_booleano = list(map(lambda x: x == 'bom', novas_categorias))
+print(filmes_bons_booleano)  # [True, True, True, False, True]
+
+print(all(filmes_bons_booleano))  # False
