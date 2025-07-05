@@ -17,15 +17,30 @@ notas_pop = [3, 2, 5, 1, 2, 1, 4, 1, 5, 0, 4, 2, 1, 2, 5, 2, 4, 4, 0, 1]
 Pronto, com essas informações você pode começar a desenvolver um programa em Python capaz de responder as perguntas do seu chefe.
 """
 
-# Mapear as avaliações numéricas em categorias: entre 0 e 1 estrelas é uma música ruim, entre 2 e 3 é uma música mediana e entre 4 e 5 são para as músicas boas. 
-# qual a diferença de usar apenas e if's e elifs
-def categorias(arg):
-    if (0 <= arg <= 1):
+"""
+eu tenho uma lista, cada valor dela vai ser atribuido um a uma categoria (ruim, mediana, boa), depois eu tenho que saber a quantidade de notas de cada 
+categoria. Existe alguma música de rock com nota mediana? Todas as músicas de Pop são boas? Qual gênero musical tem a maior quantidade de músicas boas?
+"""
+
+# Função para mapear as avaliações numéricas em categorias:
+def atribui_categorias(notas):
+    if (0 <= notas <= 1):
         return 'ruim'
-    elif (2 <= arg <= 3):
+    elif (2 <= notas <= 3):
         return 'mediana'
-    elif (4 <= arg <= 5):
+    elif (4 <= notas <= 5):
         return 'boa'
 
-# Dizer para o seu chefe quantas músicas ruins, medianas e boas existem para cada gênero: Rock e Pop.
-musicas_ruins = list(map(lambda x: 0 <= x <= 1, notas_rock))
+notas_rock = [5, 1, 4, 0, 2, 5, 2, 1, 0, 5, 5, 3, 5, 2, 5, 5, 3, 5, 4, 4]
+notas_pop = [3, 2, 5, 1, 2, 1, 4, 1, 5, 0, 4, 2, 1, 2, 5, 2, 4, 4, 0, 1]
+
+# Variável que armazena uma lista com as categorias atribuídas as suas respectivas notas:
+classificacao_rock = list(map(categorias, notas_rock))
+classificacao_pop = list(map(categorias, notas_pop))
+
+print(f"Rock:{classificacao_rock}")
+print(f"Pop:{classificacao_pop}")
+
+# Quantidade de notas em cada categoria
+musicas_ruins = list(filter(lambda x: x == 'ruim', classificacao_rock))
+print(len(musicas_ruins))
