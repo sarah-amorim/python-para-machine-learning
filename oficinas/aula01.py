@@ -42,5 +42,16 @@ print(f"Rock:{classificacao_rock}")
 print(f"Pop:{classificacao_pop}")
 
 # Quantidade de notas em cada categoria
-musicas_ruins = list(filter(lambda x: x == 'ruim', classificacao_rock))
-print(len(musicas_ruins))
+rock_ruins = list(filter(lambda x: x == 'ruim', classificacao_rock))
+rock_medianas = list(filter(lambda x: x == 'mediana', classificacao_rock))
+rock_boas = list(filter(lambda x: x == 'boa', classificacao_rock))
+
+print(f"Rock\nRuins: {len(rock_ruins)}\nMedianas: {len(rock_medianas)}\nBoas: {len(rock_boas)}")
+
+pop_ruins = list(filter(lambda x: x == 'ruim', classificacao_pop))
+pop_medianas = list(filter(lambda x: x == 'mediana', classificacao_pop))
+pop_boas = list(filter(lambda x: x == 'boa', classificacao_pop))
+
+print(f"Pop\nRuins: {len(pop_ruins)}\nMedianas: {len(pop_medianas)}\nBoas: {len(pop_boas)}")
+
+# Existe alguma música mediana de Rock?
