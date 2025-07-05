@@ -55,3 +55,11 @@ pop_boas = list(filter(lambda x: x == 'boa', classificacao_pop))
 print(f"Pop\nRuins: {len(pop_ruins)}\nMedianas: {len(pop_medianas)}\nBoas: {len(pop_boas)}")
 
 # Existe alguma música mediana de Rock?
+rock_medianas_booleano = list(map(lambda x: x == 'mediana', classificacao_rock))
+print(f"Existe alguma música mediana de Rock? Resposta: {any(rock_medianas_booleano)}")
+
+# Todas as músicas de Pop são boas?
+pop_boas_booleano = list(map(lambda x: x == 'boa', classificacao_pop))
+print(f"Todas as músicas de Pop são boas? Resposta: {all(pop_boas_booleano)}")
+
+# Qual gênero musical teve uma maior quantidade de músicas boas?
