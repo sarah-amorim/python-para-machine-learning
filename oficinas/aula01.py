@@ -17,13 +17,8 @@ notas_pop = [3, 2, 5, 1, 2, 1, 4, 1, 5, 0, 4, 2, 1, 2, 5, 2, 4, 4, 0, 1]
 Pronto, com essas informações você pode começar a desenvolver um programa em Python capaz de responder as perguntas do seu chefe.
 """
 
-"""
-eu tenho uma lista, cada valor dela vai ser atribuido um a uma categoria (ruim, mediana, boa), depois eu tenho que saber a quantidade de notas de cada 
-categoria. Existe alguma música de rock com nota mediana? Todas as músicas de Pop são boas? Qual gênero musical tem a maior quantidade de músicas boas?
-"""
-
 # Função para mapear as avaliações numéricas em categorias:
-def atribui_categorias(notas):
+def categorias(notas):
     if (0 <= notas <= 1):
         return 'ruim'
     elif (2 <= notas <= 3):
@@ -38,21 +33,21 @@ notas_pop = [3, 2, 5, 1, 2, 1, 4, 1, 5, 0, 4, 2, 1, 2, 5, 2, 4, 4, 0, 1]
 classificacao_rock = list(map(categorias, notas_rock))
 classificacao_pop = list(map(categorias, notas_pop))
 
-print(f"Rock:{classificacao_rock}")
-print(f"Pop:{classificacao_pop}")
+# print(f"Rock:{classificacao_rock}")
+# print(f"Pop:{classificacao_pop}")
 
 # Quantidade de notas em cada categoria
 rock_ruins = list(filter(lambda x: x == 'ruim', classificacao_rock))
 rock_medianas = list(filter(lambda x: x == 'mediana', classificacao_rock))
 rock_boas = list(filter(lambda x: x == 'boa', classificacao_rock))
 
-print(f"Rock\nRuins: {len(rock_ruins)}\nMedianas: {len(rock_medianas)}\nBoas: {len(rock_boas)}")
+print(f"Rock\nRuins: {len(rock_ruins)}\nMedianas: {len(rock_medianas)}\nBoas: {len(rock_boas)}\n")
 
 pop_ruins = list(filter(lambda x: x == 'ruim', classificacao_pop))
 pop_medianas = list(filter(lambda x: x == 'mediana', classificacao_pop))
 pop_boas = list(filter(lambda x: x == 'boa', classificacao_pop))
 
-print(f"Pop\nRuins: {len(pop_ruins)}\nMedianas: {len(pop_medianas)}\nBoas: {len(pop_boas)}")
+print(f"Pop\nRuins: {len(pop_ruins)}\nMedianas: {len(pop_medianas)}\nBoas: {len(pop_boas)}\n")
 
 # Existe alguma música mediana de Rock?
 rock_medianas_booleano = list(map(lambda x: x == 'mediana', classificacao_rock))
@@ -63,3 +58,11 @@ pop_boas_booleano = list(map(lambda x: x == 'boa', classificacao_pop))
 print(f"Todas as músicas de Pop são boas? Resposta: {all(pop_boas_booleano)}")
 
 # Qual gênero musical teve uma maior quantidade de músicas boas?
+if rock_boas > pop_boas:
+    print(f"Rock teve uma maior quantidade de músicas boas: {len(rock_boas)}")
+elif pop_boas > rock_boas:
+    print(f"Pop teve uma maior quantidade de músicas boas: {len(pop_boas)}")
+else:
+    print("Amboos os gêneros tem a mesma quantidade de músicas boas")
+
+    
