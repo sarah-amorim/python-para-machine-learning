@@ -27,4 +27,3 @@ Você tem duas listas, uma só com os possíveis primeiros nomes e outra só com
 Qual seria o melhor método a se utilizar para criar todos os pares de nomes?
 R: Product
 '''
-
