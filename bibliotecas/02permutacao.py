@@ -14,4 +14,7 @@ print(list(itertools.permutations([1,2,3], r=2)))
 Uma situação bem comum que vale ser citada aqui é a organização de uma casa. Por exemplo, lavar louças, limpar o quarto, limpar o banheiro, lavar e estender roupas, dentre muitas outras atividades. 
 Então, para otimizar seu tempo, você pode determinar a melhor ordem de fazer essas atividades.
 Sabendo disso, você precisa testar as possíveis combinações de atividades para saber qual a ordem que você consegue fazer no menor tempo, certo?
+
+Imagine que você tenha uma lista de nomes e quer escolher dois deles, um para ser o primeiro nome e o outro para ser o sobrenome. Qual seria o melhor método a se utilizar para criar todos os pares de nomes?
+R: Permutations
 '''
