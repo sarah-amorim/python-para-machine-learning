@@ -22,5 +22,9 @@ Criar um algoritmo para saber qual é a combinação mais bonita é um problema 
 Contudo, a máquina pode lhe auxiliar a criar todos os pares possíveis de blusa e calça diferentes, onde, a partir disso, será possível você testar todos 
 os pares de roupas imagináveis e informar de qual gostou mais. Como exemplo, considere a situação em que você tem várias blusas e calças de cores diferentes 
 e precisa decidir qual a melhor combinação.
+
+Você tem duas listas, uma só com os possíveis primeiros nomes e outra só com os possíveis sobrenomes (sem deixar o sobrenome vir antes do nome). 
+Qual seria o melhor método a se utilizar para criar todos os pares de nomes?
+R: Product
 '''
 
